@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Index - NetApps Development</title>
+  <title>NetApps Development</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -27,13 +27,6 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Dewi
-  * Template URL: https://bootstrapmade.com/dewi-free-multi-purpose-html-template/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body class="index-page">
@@ -71,9 +64,10 @@
       <div class="container d-flex flex-column align-items-center">
         <h2 data-aos="fade-up" data-aos-delay="100">PLAN. LAUNCH. GROW.</h2>
         <p data-aos="fade-up" data-aos-delay="200">A Better Digital Experience</p>
-        <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300" id="iFra">
           <a href="#contact" class="btn-get-started">Contact Us</a>
-          <a href="https://www.tiktok.com/@netapps_development/video/7441296606952983864?is_from_webapp=1&sender_device=pc" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+          <a href="" onclick="showMessage()" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+          <iframe src="https://www.tiktok.com/@netapps_development/video/7441296606952983864?is_from_webapp=1&sender_device=pc&web_id=7470786944541673015" width="605"  frameborder="0" allowfullscreen></iframe>
         </div>
       </div>
 
@@ -142,15 +136,15 @@
           <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
             <div class="service-item">
               <div class="img">
-                <img src="assets/img/services/WebDev.jpg" class="img-fluid" alt="">
+                <img src="assets/img/services/WebDev.jpg" class="img-fluid" id="img-fluid" alt="">
               </div>
               <div class="details position-relative">
                 <div class="icon">
                   <img src="assets/img/icons/world-wide-web.png" alt="">
                
                 </div>
-                <a href="#" class="stretched-link">
-                  <h3>Web Development</h3>
+                <a href="services.html#features-tab-1" class="stretched-link">
+                  <h3 class="service-title">Web Development</h3>
                 </a>
                 <p>We develop great responsive websites for your particular need. 
                     Whether it be for personal or business use, you can count on us to produce great results.</p>
@@ -161,14 +155,14 @@
           <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
             <div class="service-item">
               <div class="img">
-                <img src="assets/img/services/Developmemt.jpg" class="img-fluid" alt="">
+                <img src="assets/img/services/Developmemt.jpg" class="img-fluid" id="img-fluid" alt="">
               </div>
               <div class="details position-relative">
                 <div class="icon">
                   <img src="assets/img/icons/coding.png" alt="">
                 </div>
-                <a href="#" class="stretched-link">
-                  <h3>Software Developmemt</h3>
+                <a href="services.html#features-tab-2" class="stretched-link">
+                  <h3 class="service-title">Software Developmemt</h3>
                 </a>
                 <p>If you need a windows application for your business, we offer outstanding development solutions for you.</p>
               </div>
@@ -178,14 +172,14 @@
           <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
             <div class="service-item">
               <div class="img">
-                <img src="assets/img/services/LaptopRep.jpg" class="img-fluid" alt="">
+                <img src="assets/img/services/LaptopRep.jpg" class="img-fluid" id="img-fluid" alt="">
               </div>
               <div class="details position-relative">
                 <div class="icon">
                   <img src="assets/img/icons/laptop.png" alt="">
                 </div>
-                <a href="#" class="stretched-link">
-                  <h3>Laptop Repairs</h3>
+                <a href="services.html#features-tab-4" class="stretched-link">
+                  <h3 class="service-title">Laptop Repairs</h3>
                 </a>
                 <p>You probably spend most of your time on electronic devices.Your laptop is probably one of your most prized possessions. 
                     Whenever it stop working as intended or may have a few loose screws, contact us.</p>
@@ -471,7 +465,7 @@
                 <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
                   <i class="bi bi-geo-alt"></i>
                   <h3>Address</h3>
-                  <p>125 Florence Nzama Street, Durban 4001</p>
+                  <p class="location"><a href="http://maps.google.com/?q=NetApps Development, 3rd Floor, Convention House, 125 Prince Alfred St, North Beach, Durban, 4001">125 Florence Nzama Street, Durban 4001</a></p>
                 </div>
               </div><!-- End Info Item -->
 
@@ -479,7 +473,7 @@
                 <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
                   <i class="bi bi-telephone"></i>
                   <h3>Call Us</h3>
-                  <p>+27 711 753 994</p>
+                  <p><button class="btn-click" onclick="copyContent()"> <a href="tel:+27 711 753 994">+27 711 753 994</a> </button></p>
                 </div>
               </div><!-- End Info Item -->
 
@@ -487,7 +481,7 @@
                 <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400">
                   <i class="bi bi-envelope"></i>
                   <h3>Email Us</h3>
-                  <p>info@netappsdevelopment.com</p>
+                  <p><a a href="mailto:info@netappsdevelopment.com">info@netappsdevelopment.com</a></p>
                 </div>
               </div><!-- End Info Item -->
 
@@ -543,7 +537,7 @@
             <span class="sitename">NetApps Development</span>
           </a>
           <div class="footer-contact pt-3">
-            <p>125 Florence Nzama Street</p>
+            <p class="location"><a href="http://maps.google.com/?q=NetApps Development, 3rd Floor, Convention House, 125 Prince Alfred St, North Beach, Durban, 4001">125 Florence Nzama Street</a></p>
             <p>Durban 4001</p>
             <p id="myNumber">+27 711 753 994</p>
             <p class="mt-3"><strong>Phone:</strong> <span><button class="btn-click" onclick="copyContent()">+27 711 753 994</button></span></p>
@@ -561,7 +555,7 @@
           <ul>
             <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
             <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="services.html">Services</a></li>
             <li><i class="bi bi-chevron-right"></i> <a href="#">Sales and Purchases</a></li>
             <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
             <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
@@ -571,11 +565,11 @@
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Our Services</h4>
           <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">App Development</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Web Development</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Software Development</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Laptop Repairs</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Corporate Identity</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="services.html#features-tab-3">App Development</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="services.html#features-tab-1">Web Development</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="services.html#features-tab-2">Software Development</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="services.html#features-tab-4">Laptop Repairs</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="services.html#features-tab-5">Corporate Identity</a></li>
           </ul>
         </div>
 

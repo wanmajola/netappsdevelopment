@@ -1,11 +1,3 @@
-/**
-* Template Name: Dewi
-* Template URL: https://bootstrapmade.com/dewi-free-multi-purpose-html-template/
-* Updated: Aug 07 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # Font & Color Variables
 # Help: https://bootstrapmade.com/color-system/
@@ -86,6 +78,12 @@ body {
   background-color: transparent;
 }
 
+.btn-click a { 
+  text-decoration: none;
+  color: var(--default-color);
+}
+
+
 #myNumber {
   display: none;
 }
@@ -99,6 +97,34 @@ a {
 a:hover {
   color: color-mix(in srgb, var(--accent-color), transparent 25%);
   text-decoration: none;
+}
+
+.nav-tabs {
+  width: 100%;
+  margin: auto;
+  float: none;
+}
+
+.nav-tabs .nav-item .nav-link {
+  gap: 10px;
+  width: 95%;
+  cursor: pointer;
+  text-align: center;
+}
+
+.nav-link:hover {
+  h4 {
+    color:#4a61a9;
+  }
+  
+}
+
+
+.nav-link img {
+  margin: 0;
+  width: 25px;
+  height: 25px;
+  color:#4a61a9;
 }
 
 h1,
@@ -577,6 +603,14 @@ h6 {
   .mobile-nav-active .navmenu>ul {
     display: block;
   }
+
+  .service-title {
+    color: var(--accent-color);
+  }
+
+  .sitename:focus, .sitename.active, .sitename::after {
+    color: white;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -816,6 +850,15 @@ h6 {
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
+
+  .service-title {
+    color: var(--accent-color);
+  }
+
+  #img-fluid {
+    aspect-ratio: 3/2;
+    margin: auto;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -929,6 +972,12 @@ section,
   .section-title p {
     font-size: 24px;
   }
+
+  #img-fluid {
+    aspect-ratio: 3/2;
+    margin: auto;
+  }
+
 }
 
 /*--------------------------------------------------------------
@@ -1106,6 +1155,10 @@ section,
   display: none;
 }
 
+#iFra iframe {
+  display: none;
+}
+
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
@@ -1120,7 +1173,7 @@ section,
 
 .services .details {
   background: color-mix(in srgb, var(--surface-color), transparent 5%);
-  padding: 50px 30px;
+  padding: 55px 30px;
   margin: -100px 30px 0 30px;
   transition: all ease-in-out 0.3s;
   position: relative;
@@ -1228,7 +1281,7 @@ section,
 .features .nav-link {
   background-color: var(--surface-color);
   color: var(--heading-color);
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 85%);
   padding: 15px 20px;
   transition: 0.3s;
   border-radius: 0;
@@ -1262,7 +1315,22 @@ section,
 }
 
 .features .nav-link.active h4 {
-  color: var(--contrast-color);
+  color: var(--accent-color);
+}
+
+.info-item a {
+  text-decoration: none;
+  color: var(--default-color);
+}
+
+.info-item .btn-click {
+  text-decoration: none;
+  color: var(--default-color);
+}
+
+.location a {
+  text-decoration: none;
+  color: var(--default-color);
 }
 
 @media (max-width: 768px) {

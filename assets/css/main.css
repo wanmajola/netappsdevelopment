@@ -933,6 +933,10 @@ section,
   .section {
     scroll-margin-top: 76px;
   }
+
+  .testimonials .testimonial-item .testimonial-img {
+    height: 50%;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1426,6 +1430,13 @@ section,
   color: var(--accent-color);
 }
 
+.swiper-slide {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+  margin-top: 30px;
+  height: 500px;
+  width: auto;
+}
+
 /*--------------------------------------------------------------
 # Testimonials Section
 --------------------------------------------------------------*/
@@ -1468,15 +1479,24 @@ section,
 
 .testimonials .testimonial-item .testimonial-img {
   width: 100px;
-  border-radius: 50%;
-  border: 6px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  height: 320px;
   margin: 0 auto;
+  object-fit: cover;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+   
+  background-repeat: no-repeat;
+  border: 6px solid color-mix(in srgb, var(--default-color), transparent 85%);
 }
 
 .testimonials .testimonial-item h3 {
+  z-index: -1;
   font-size: 20px;
   font-weight: bold;
   margin: 10px 0 5px 0;
+  color: var(--accent-color);
 }
 
 .testimonials .testimonial-item h4 {

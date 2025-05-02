@@ -137,6 +137,15 @@ h6 {
   font-family: var(--heading-font);
 }
 
+#product #con {
+  gap: 10px;
+  width: 70%;
+  padding: 10px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, auto);
+}
+
 /* PHP Email Form Messages
 ------------------------------*/
 .php-email-form .error-message {
@@ -616,6 +625,14 @@ h6 {
   .sitename:focus, .sitename.active, .sitename::after {
     color: white;
   }
+
+  #product #con {
+    gap: 10px;
+    width: 70%;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+  }
 }
 
 /*--------------------------------------------------------------
@@ -848,9 +865,32 @@ h6 {
   opacity: 1;
 }
 
+
+@media screen and (max-width: 1024px) {
+  #product #con {
+    gap: 10px;
+    width: 90%;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+  }
+}
+
+@media screen and (max-width: 920px) {
+  #product #con {
+    gap: 10px;
+    width: 70%;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+  }
+}
+
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
 --------------------------------------------------------------*/
+
+
 @media screen and (max-width: 768px) {
   [data-aos-delay] {
     transition-delay: 0 !important;
@@ -863,6 +903,25 @@ h6 {
   #img-fluid {
     aspect-ratio: 3/2;
     margin: auto;
+  }
+
+  #product #con {
+    gap: 10px;
+    width: 80%;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+  }
+
+}
+
+@media screen and (max-width: 640px) {
+  #product #con {
+    gap: 10px;
+    width: 60%;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: repeat(1, 300px);
   }
 }
 
@@ -1079,6 +1138,24 @@ section,
   color: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
 
+
+.btn-get-started {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 4px;
+  transition: 0.3s;
+  text-transform: uppercase;
+}
+
+.btn-get-started:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+}
+
 @media (max-width: 768px) {
   .hero h2 {
     font-size: 32px;
@@ -1086,6 +1163,17 @@ section,
 
   .hero p {
     font-size: 18px;
+  }
+}
+
+
+@media (max-width: 375px) {
+  #product #con {
+    gap: 10px;
+    width: 80%;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
   }
 }
 
@@ -1479,14 +1567,13 @@ section,
 
 .testimonials .testimonial-item .testimonial-img {
   width: 100px;
-  height: 320px;
+  height: auto;
   margin: 0 auto;
   object-fit: cover;
   border-radius: 50%;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-   
   background-repeat: no-repeat;
   border: 6px solid color-mix(in srgb, var(--default-color), transparent 85%);
 }
@@ -1496,7 +1583,7 @@ section,
   font-size: 20px;
   font-weight: bold;
   margin: 10px 0 5px 0;
-  color: var(--accent-color);
+  color: black;
 }
 
 .testimonials .testimonial-item h4 {
@@ -1559,6 +1646,17 @@ section,
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--default-color);
   opacity: 1;
+}
+
+.testimonial-item .testimonial-img {
+  width: 500px;
+  height: 300px;
+  margin: 0 auto;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 @media (min-width: 992px) {
